@@ -1,19 +1,16 @@
 import { Text, View } from 'react-native';
 
-import { EditScreenInfo } from './EditScreenInfo';
 
 type ScreenContentProps = {
-  title: string;
   path: string;
   children?: React.ReactNode;
 };
 
-export const ScreenContent = ({ title, path, children }: ScreenContentProps) => {
+export const ScreenContent = ({ children }: ScreenContentProps) => {
   return (
-    <View className={styles.container}>
-      <Text className={styles.title}>{title}</Text>
+    <View className='items-center flex-1 justify-center'>
+      {/* <Text className='text-red-600 font-bold'>{title}</Text> */}
       <View className={styles.separator} />
-      <EditScreenInfo path={path} />
       {children}
     </View>
   );
