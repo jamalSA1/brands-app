@@ -4,24 +4,13 @@
     "slug": "brands-app",
     "version": "1.0.0",
     "scheme": "brands-app",
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/favicon.png"
-    },
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
     "plugins": [
-      "expo-router",
       [
-        "@prisma/react-native",
-        {
-          "ios": {
-            "useFrameworks": "static"
-          }
-        }
+        "expo-router"
       ],
-      "expo-build-properties",
-      "@react-native-firebase/app",
-      "@react-native-firebase/auth"
+      "expo-build-properties"
     ],
     "experiments": {
       "typedRoutes": true,
@@ -29,7 +18,6 @@
     },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -40,18 +28,17 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.galaxies.firebase",
-      "googleServicesFile": "./GoogleService-Info.plist"
-      // "bundleIdentifier": "com.ertari90.brandsapp"
+      "bundleIdentifier": "com.jamal.brandsapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.galaxies.firebase",
-      "googleServicesFile": "./google-services.json"
-      // "package": "com.ertari90.brandsapp"
+      "package": "com.jamal.brandsapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
   }
 }
